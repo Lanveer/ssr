@@ -1,0 +1,28 @@
+{
+  "name": "ssr",
+  "version": "1.0.0",
+  "description": "ssr project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lanveer/ssr.git"
+  },
+  "keywords": [
+    "ssr"
+  ],
+  "author": "lanveer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lanveer/ssr/issues"
+  },
+  "homepage": "https://github.com/Lanveer/ssr#readme",
+  "dependencies": {
+    "next": "^9.0.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
