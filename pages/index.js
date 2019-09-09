@@ -3,9 +3,11 @@
  */
 import Link from 'next/link';
 import Header from '../components/header'
+
+//  路由伪装
 const PostLink = (props) => (
     <li>
-        <Link href={`/post?title=${props.title}`}>
+        <Link href={`/post?title=${props.title}`} as={`/${props.id}`}>
             <a>{props.title}</a>
         </Link>
     </li>
@@ -17,9 +19,9 @@ const Index =()=>{
            <h1>my blog</h1>
             <Header/>
             <ul>
-                <PostLink title="Hello next.js" />
-                <PostLink title="next.js is awesome" />
-                <PostLink title="Deploy apps with Zeit" />
+                <PostLink title="Hello next.js" id="lanveer" />
+                <PostLink title="next.js is awesome" id="albert"/>
+                <PostLink title="Deploy apps with Zeit" id="zoey"/>
             </ul>
         </div>
     )

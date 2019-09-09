@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next"
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "build": "next build"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   },
   "homepage": "https://github.com/Lanveer/ssr#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "next": "^9.0.5",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
